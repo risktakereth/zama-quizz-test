@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "An NFT marketplace"
             ],
             correctIndex: 0
-        },/*
+        },
         {
             text: "Which operation can be done using FHE?",
             options: [
@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Solana"
             ],
             correctIndex: 0
-        }*/
+        }
     ];
 
     let currentQuestionIndex = 0;
