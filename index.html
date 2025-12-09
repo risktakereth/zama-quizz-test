@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZamaQuizz</title>
+    <meta name="description" content="A premium quiz experience">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="feels-good-man_transparent.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <main class="app-container">
+        <!-- Start Screen -->
+        <section id="start-screen" class="screen active">
+            <div class="glass-card fade-in-up">
+                <div class="logo-container">
+                    <img src="téléchargement.png" alt="Zama Logo" class="hero-image">
+                </div>
+                <header class="card-header">
+                    <h1 class="logo-text">Zama<span class="gradient-text">Only</span></h1>
+                    <p class="subtitle">Prepare for the ultimate test of randomness.</p>
+                </header>
+                <div class="card-body">
+                    <button id="start-btn" class="primary-btn glow-effect">
+                        Start Quiz
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz Screen -->
+        <section id="quiz-screen" class="screen hidden">
+            <div class="glass-card">
+                <header class="quiz-header">
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progress-bar"></div>
+                    </div>
+                    <div class="quiz-meta">
+                        <span id="question-count">Question 1/2</span>
+                    </div>
+                </header>
+                <div class="card-body">
+                    <h2 id="question-text" class="question-text">Loading...</h2>
+                    <div id="options-container" class="options-grid">
+                        <!-- Options injected here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Result Screen -->
+        <section id="result-screen" class="screen hidden">
+            <div class="glass-card fade-in-up">
+                <header class="card-header">
+                    <h2 class="result-title" style="padding-bottom: 15px;">Quiz Completed!</h2>
+                    <div class="score-circle">
+                        <span id="final-score">0</span>
+                        <span class="total-score">/ 0</span>
+                    </div>
+                </header>
+                <div class="card-body">
+                    <p id="result-message" class="result-message">Great job!</p>
+                    <button id="share-btn" class="primary-btn share-btn">
+                        <span>Share Result 🐦</span>
+                    </button>
+                    <button id="restart-btn" class="secondary-btn">
+                        <span>Replay</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="23 4 23 10 17 10"></polyline>
+                            <polyline points="1 20 1 14 7 14"></polyline>
+                            <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Social Widget -->
+    <div class="social-widget">
+        <a href="https://twitter.com/ZamaOnly" target="_blank" class="twitter-btn">
+            Follow @ZamaOnly
+        </a>
+        <img src="feels-good-man_transparent.png" alt="Feels Good Man" class="widget-image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
