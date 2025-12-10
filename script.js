@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (shareBtn) shareBtn.addEventListener('click', shareResult);
 
     function shareResult() {
-        const text = `I just scored ${score}/${questions.length} on the @ZamaOnly Quiz! Can you beat my score? 🧠🔒 #FHE #Zama https://x.com/ZamaOnly/status/1996758350143410382`;
+        const text = `I just scored ${score}/${questions.length} on the @ZamaOnly Quiz! Can you beat my score? 🧠🔒 #FHE #Zama https://x.com/ZamaOnly/status/1998642251992326314`;
         const url = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(text);
         window.open(url, '_blank');
     }
